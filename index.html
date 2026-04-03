@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda de Poleras</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 class="logo">Poleras Style</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="fa fa-shirt"></i> Productos</a></li>
+                <li><a href="#"><i class="fa fa-cart-shopping"></i> Carrito (<span id="contador">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="productos">
+
+            <article class="producto">
+                <img src="https://via.placeholder.com/200" alt="Polera Negra">
+                <h3>Polera Negra</h3>
+                <p>$9.990</p>
+                <button onclick="agregarCarrito('Polera Negra')">
+                    <i class="fa fa-cart-plus"></i> Comprar
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="https://via.placeholder.com/200" alt="Polera Blanca">
+                <h3>Polera Blanca</h3>
+                <p>$8.990</p>
+                <button onclick="agregarCarrito('Polera Blanca')">
+                    <i class="fa fa-cart-plus"></i> Comprar
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="https://via.placeholder.com/200" alt="Polera Estampada">
+                <h3>Polera Estampada</h3>
+                <p>$12.990</p>
+                <button onclick="agregarCarrito('Polera Estampada')">
+                    <i class="fa fa-cart-plus"></i> Comprar
+                </button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- NOTIFICACIÓN -->
+    <div id="notificacion"></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Tienda de Poleras</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
